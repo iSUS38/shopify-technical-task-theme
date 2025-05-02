@@ -34,7 +34,10 @@
         "custom_user_pdp_form_wNiYMj": {
           "type": "custom_user_pdp_form",
           "settings": {
-            "title": "Enter your data to save it further"
+            "title": "Enter your data to save it further",
+            "title_font_size": "32",
+            "title_position": "left",
+            "save_button_position": "center"
           }
         },
         "buy_buttons": {
