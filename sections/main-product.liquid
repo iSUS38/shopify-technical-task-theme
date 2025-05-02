@@ -116,9 +116,34 @@
                 </div>
               {% when "custom_user_pdp_form" %}
                 <div>
-                  <h6>
-                    Hello
-                  </h6> 
+                  <h6>{{ block.settings.title }}</h6>
+
+                  <form method="post" action="/saveUserData">
+                    <label>{{ "customer.pdp_form.first_name" | t }}</label>
+                    <input type="text" name="firstName" required>
+
+                    <label>{{ "customer.pdp_form.last_name" | t }}</label>
+                    <input type="text" name="lastName" required>
+
+                    <label>{{ "customer.pdp_form.email" | t }}</label>
+                    <input type="email" name="email" required>
+
+                    <label>{{ "customer.pdp_form.phone" | t }}</label>
+                    <input type="tel" name="phone" required>
+
+                    <label>{{ "customer.pdp_form.birthday_date" | t }}</label>
+                    <input type="date" name="birthDate" required>
+
+                    <label>{{ "customer.pdp_form.sex" | t }}</label>
+                    <select name="gender" required>
+                      <option value="" disabled selected>Оберіть</option>
+                      <option value="Чоловік">Чоловік</option>
+                      <option value="Жінка">Жінка</option>
+                      <option value="Інше">Інше</option>
+                    </select>
+
+                    <button type="submit">Зберегти</button>
+                  </form>
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
@@ -781,6 +806,7 @@
           "id": "title",
           "label": "t:sections.featured-product.blocks.custom_user_pdp_form.settings.form_title.label"
         }
+       
       ]
     },
     {
