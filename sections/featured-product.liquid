@@ -113,6 +113,12 @@
                       {{ 'onboarding.product_title' | t }}
                     {%- endunless -%}
                   </h2>
+                {% when "custom_user_pdp_form" %}
+                    <div>
+                      <h6>
+                        {{ block.settings.title }}
+                      </h6> 
+                    </div>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                     {%- render 'price',
@@ -498,6 +504,18 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "custom_user_pdp_form",
+      "limit": 1,
+      "name": "t:sections.custom_user_pdp_form.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.custom_user_pdp_form.settings.form_title.label"
+        }
+      ]
     },
     {
       "type": "text",
