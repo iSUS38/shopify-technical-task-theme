@@ -62,26 +62,6 @@
         "padding_bottom": 12
       }
     },
-    "custom_user_pdp_form_ReP6Yy": {
-      "type": "custom-user-pdp-form",
-      "blocks": {
-        "user_form_elements_yRaxPF": {
-          "type": "user-form-elements",
-          "settings": {
-            "label": "Ім'я"
-          }
-        }
-      },
-      "block_order": [
-        "user_form_elements_yRaxPF"
-      ],
-      "name": "Форма користувача",
-      "settings": {
-        "title": "",
-        "title_position": "left",
-        "font_size": 32
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -103,7 +83,6 @@
   },
   "order": [
     "main",
-    "custom_user_pdp_form_ReP6Yy",
     "related-products"
   ]
 }
