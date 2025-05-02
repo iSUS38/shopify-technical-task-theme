@@ -129,6 +129,16 @@
                     margin-top: 5px;
                     box-sizing: border-box;
                   }
+
+                  .user-form-container input:focus-visible,
+                  .user-form-container select:focus-visible {
+                    outline: none;
+                    box-shadow: unset;
+                  }
+
+                  .user-form-container button {
+                    margin-top: 15px;
+                  }
                 
                   .user-form-container button {
                     background-color: #000;
@@ -143,7 +153,7 @@
                   }
                 </style>
                 <div class="user-form-container">
-                  <h6>{{ block.settings.title }}</h6>
+                  <h6 style="text-align: {{ block.settings.title_position }}">{{ block.settings.title }}</h6>
 
                   <form method="post" action="/saveUserData">
                     <label>{{ "customer.pdp_form.first_name" | t }}</label>
@@ -166,7 +176,6 @@
                       <option value="" disabled selected>Оберіть</option>
                       <option value="Чоловік">Чоловік</option>
                       <option value="Жінка">Жінка</option>
-                      <option value="Інше">Інше</option>
                     </select>
 
                     <button type="submit">Зберегти</button>
@@ -832,8 +841,45 @@
           "type": "text",
           "id": "title",
           "label": "t:sections.featured-product.blocks.custom_user_pdp_form.settings.form_title.label"
+        },
+        {
+          "type": "select",
+          "id": "title_position",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.label",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__3.label"
+            }
+          ]
+        },
+        {
+          "label": "t:sections.featured-product.blocks.custom_user_pdp_form.settings.save_button_position.label",
+          "type": "select",
+          "id": "save_button_position",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__3.label"
+            }
+          ]
         }
-       
       ]
     },
     {

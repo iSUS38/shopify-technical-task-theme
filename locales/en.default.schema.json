@@ -914,6 +914,9 @@
             },
             "title_font_size": {
               "label": "Title font size"
+            },
+            "save_button_position": {
+              "label": "Submit button position"
             }
           }
         },
