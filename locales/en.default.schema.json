@@ -364,6 +364,17 @@
     }
   },
   "sections": {
+    "custom_user_pdp_form": {
+      "form_title": {
+        "label": "Form title",
+      },
+      "title_position": {
+        "label": "Title position"
+      },
+      "title_font_size": {
+        "label": "Title font size"
+      }
+    },
     "all": {
       "animation": {
         "content": "Animations",
