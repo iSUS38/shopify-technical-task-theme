@@ -31,17 +31,17 @@
             "swatch_shape": "circle"
           }
         },
+        "custom_user_pdp_form_wNiYMj": {
+          "type": "custom_user_pdp_form",
+          "settings": {
+            "title": "Enter your data to save it further"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "custom_user_pdp_form_wNiYMj": {
-          "type": "custom_user_pdp_form",
-          "settings": {
-            "title": ""
           }
         }
       },
@@ -50,8 +50,8 @@
         "description",
         "price",
         "variant_picker",
-        "buy_buttons",
-        "custom_user_pdp_form_wNiYMj"
+        "custom_user_pdp_form_wNiYMj",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
