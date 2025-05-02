@@ -486,6 +486,14 @@
       "password": "Password",
       "submit": "Create"
     },
+    "pdp_form": {
+      "first_name": "First name",
+      "last_name": "Last name",
+      "email": "Email",
+      "phone": "Phone number",
+      "birthday_date": "Birth date",
+      "sex": "Sex"
+    },
     "reset_password": {
       "title": "Reset account password",
       "subtext": "Enter a new password",
