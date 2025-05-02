@@ -36,8 +36,8 @@
           "settings": {
             "title": "Enter your data to save it further",
             "title_font_size": "16",
-            "title_position": "left",
-            "save_button_position": "center"
+            "title_position": "center",
+            "save_button_position": "left"
           }
         },
         "buy_buttons": {
