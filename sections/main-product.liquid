@@ -15,6 +15,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'component-user-pdp-form.css' | asset_url | stylesheet_tag }}
 
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
@@ -115,43 +116,6 @@
                   -%}
                 </div>
               {% when "custom_user_pdp_form" %}
-                <style>
-                  .user-form-container label {
-                    display: block;
-                    margin-top: 15px;
-                    font-weight: bold;
-                  }
-                
-                  .user-form-container input,
-                  .user-form-container select {
-                    width: 100%;
-                    padding: 10px;
-                    margin-top: 5px;
-                    box-sizing: border-box;
-                  }
-
-                  .user-form-container input:focus-visible,
-                  .user-form-container select:focus-visible {
-                    outline: none;
-                    box-shadow: unset;
-                  }
-
-                  .user-form-container button {
-                    margin-top: 15px;
-                  }
-                
-                  .user-form-container button {
-                    background-color: #000;
-                    color: #fff;
-                    padding: 12px 20px;
-                    border: none;
-                    cursor: pointer;
-                  }
-                
-                  .user-form-container button:hover {
-                    background-color: #444;
-                  }
-                </style>
                 <div class="user-form-container">
                   <h6 style="font-size: {{ block.settings.title_font_size }}px; text-align: {{ block.settings.title_position }}">{{ block.settings.title }}</h6>
 
