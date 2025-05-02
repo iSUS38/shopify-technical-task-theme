@@ -1,0 +1,71 @@
+<div>
+    <h5>{{ section.settings.title }}</h5>
+
+    <div>
+        {% for block in section.blocks %}
+            {% case block.type %}
+                {% when "user-form-elements" %}
+                <div>
+                    <label>{{ block.settings.label }}</label>
+                    <input />
+                </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Користувацька форма",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": ""
+        },
+        {
+            "type": "select",
+            "id": "title_position",
+            "label": "",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "number",
+            "id": "font_size",
+            "label": "",
+            "default": 32
+        },
+    ],
+    "blocks": [
+        {
+            "type": "user-form-elements",
+            "name": "user-form-elements",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "label",
+                    "label": "Form element label"
+                }
+            ]
+
+        }
+    ],
+    "class": "section",
+    "presets": [
+    ]
+}
+{% endschema %}
