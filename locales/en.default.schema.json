@@ -373,20 +373,6 @@
     }
   },
   "sections": {
-    "custom_user_pdp_form": {
-      "name": "Customer data form",
-      "settings": {
-        "form_title": {
-          "label": "Form title",
-        },
-        "title_position": {
-          "label": "Title position"
-        },
-        "title_font_size": {
-          "label": "Title font size"
-        }
-      }
-    },
     "all": {
       "animation": {
         "content": "Animations",
@@ -914,6 +900,20 @@
               "options__3": {
                 "label": "None"
               }
+            }
+          }
+        },
+        "custom_user_pdp_form": {
+          "name": "Customer data form",
+          "settings": {
+            "form_title": {
+              "label": "Form title",
+            },
+            "title_position": {
+              "label": "Title position"
+            },
+            "title_font_size": {
+              "label": "Title font size"
             }
           }
         },
