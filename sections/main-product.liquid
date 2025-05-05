@@ -126,15 +126,15 @@
                     <label>{{ "customer.pdp_form.birthday_date" | t }}</label>
                     <input type="date" name="birthDate" required>
 
-                    <label>{{ "customer.pdp_form.sex" | t }}</label>
+                    <label>{{ "customer.pdp_form.gender_select.select_label" | t }}</label>
                     <select name="gender" required>
-                      <option value="" disabled selected>Оберіть</option>
-                      <option value="Чоловік">Чоловік</option>
-                      <option value="Жінка">Жінка</option>
+                      <option value="" disabled selected>{{ "customer.pdp_form.gender_select.choose_option_label" | t  }}</option>
+                      <option value="Чоловік">{{ "customer.pdp_form.gender_select.male_label" | t  }}</option>
+                      <option value="Жінка">{{ "customer.pdp_form.gender_select.female_label" | t  }}</option>
                     </select>
 
                     <div style="text-align: {{ block.settings.save_button_position }}">
-                      <button type="submit">Зберегти</button>
+                      <button type="submit">{{ "customer.pdp_form.save_button" | t  }}</button>
                     </div>
                   </form>
                 </div>
