@@ -492,7 +492,13 @@
       "email": "Email",
       "phone": "Phone number",
       "birthday_date": "Birth date",
-      "sex": "Sex"
+      "gender_select": {
+        "select_label": "Sex",
+        "choose_option_label": "Choose",
+        "male_label": "Male",
+        "female_label": "Female"
+      },
+      "save_button": "Save"
     },
     "reset_password": {
       "title": "Reset account password",
